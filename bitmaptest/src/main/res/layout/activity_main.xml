@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.bitmaptest.MainActivity">
+
+    <Button
+        android:id="@+id/bitmap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="bitma特效" />
+
+    <Button
+        android:id="@+id/tuch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="触摸移动" />
+    <Button
+        android:id="@+id/cut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="截图" />
+    <Button
+        android:id="@+id/alpa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="透明度" />
+    <Button
+        android:id="@+id/thumbnails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="缩略图" />
+</LinearLayout>
