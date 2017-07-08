@@ -30,17 +30,17 @@ class MainActivity : AppCompatActivity() {
                         , "paswd" to "123"
                 )
             }
-            quer.onClick {
-                database.use({
-                    select("user", "name").whereSimple("name=?", "zhangsan").exec {
-                        while (moveToNext()) {
-                            Log.e("TAG","size= ${columnCount} ${getString(0)}")
-                        }
-                    }
 
-                })
-            }
         }
+        quer.onClick {
+            database.use({
+                select("user", "*").whereSimple("name=?", "zhangsan").exec {
+                    while (moveToNext()) {
+                        Log.e("TAG", "size= ${columnCount} ${getString(getColumnIndex("id"))}")
+                    }
+                }
 
+            })
+        }
     }
 }

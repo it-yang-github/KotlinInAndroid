@@ -19,6 +19,7 @@ class DBhelp(var ctx: Context) : ManagedSQLiteOpenHelper(ctx, "Mydb") {
             }
             return instance!!
         }
+
         val Context.database: DBhelp
             get() = DBhelp.getInstance(getApplicationContext())
     }
