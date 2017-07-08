@@ -24,9 +24,6 @@ class MainActivity : AppCompatActivity() {
 
     private fun initlinsener() {
         insert.onClick {
-            /**
-             *插入 一条记录
-             */
             database.use {
                 insert("user"
                         , "name" to "zhangsan"
@@ -34,9 +31,6 @@ class MainActivity : AppCompatActivity() {
                 )
             }
             quer.onClick {
-                /**
-                 * 查询
-                 */
                 database.use({
                     select("user", "name").whereSimple("name=?", "zhangsan").exec {
                         while (moveToNext()) {
