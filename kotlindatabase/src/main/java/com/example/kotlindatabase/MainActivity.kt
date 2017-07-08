@@ -32,6 +32,7 @@ class MainActivity : AppCompatActivity() {
             }
 
         }
+
         quer.onClick {
             database.use({
                 select("user", "*").whereSimple("name=?", "zhangsan").exec {
